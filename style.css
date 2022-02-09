@@ -88,3 +88,7 @@ body {
   height: 25px;
   padding-top: 10px;
 }
+button:hover{
+    color: rgb(4, 4, 63);
+    transform: scale(1.5);
+}
