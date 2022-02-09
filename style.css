@@ -47,8 +47,9 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
-  line-height: 52px;
+  line-height: 50px;
   color: #172b4d;
+  width: 350px;
   margin-bottom: 20px;
 }
 
