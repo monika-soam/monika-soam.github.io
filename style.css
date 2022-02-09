@@ -1,0 +1,90 @@
+body {
+  align-items: center;
+}
+
+.main {
+  /* background-image:url("/img/header-shapes\ mobile.svg"); */
+  border: 1px solid blue;
+  margin: auto;
+  width: 375px;
+  height: 718px;
+}
+
+.header {
+  display: flex;
+  height: 5vh;
+  justify-content: space-between;
+}
+
+.header button {
+  background: white;
+  padding: 0;
+  margin: 7px;
+  width: 24px;
+  height: 18px;
+  margin: 30px 35px;
+  border: white;
+}
+
+.header h1 {
+  position: static;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  left: 12px;
+  top: 10px;
+  color: #6070ff;
+  margin: 30px 35px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/header-shapes\ mobile.svg");
+  height: 588px;
+  padding: 85px 20px 0 16px;
+}
+
+.content h1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.content h6 {
+  color: #344563;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 20px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content h3 {
+  color: #7f8cff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 147px;
+  padding-right: 25px;
+}
+
+.social_img {
+  display: flex;
+  column-gap: 20px;
+}
+
+.social_img img {
+  width: 25px;
+  height: 25px;
+  padding-top: 10px;
+}
