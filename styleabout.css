@@ -148,7 +148,7 @@ ul {
 
 .link2,
 .link3 {
-  border-bottom: 2px solid rgb(173, 169, 169);
+  border-bottom: 1.2px solid rgb(173, 169, 169);
   padding-bottom: 30px;
 }
 
@@ -176,11 +176,6 @@ ul {
   padding: 5px 60px 5px 5px;
 }
 
-hr {
-  color: gray;
-  border-style: solid;
-  width: auto;
-}
 
 .icon {
   margin-left: 160px;
