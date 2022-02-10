@@ -141,7 +141,7 @@ ul {
   padding: 5px 20px 0 16px;
 }
 
-.accordian li:hover {
+.accordian .link:hover {
   background-color: rgb(196, 190, 190);
   width: 340px;
   border-radius: 10px;
@@ -159,9 +159,9 @@ ul {
   overflow: hidden;
 }
 
-.panel p {
+.panel li {
   display: grid;
-  grid-template-columns: 70px auto;
+  grid-template-columns: 60px 160px;
   align-items: center;
   border-radius: 10px;
   margin: 0;
