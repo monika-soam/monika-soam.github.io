@@ -132,16 +132,24 @@ ul {
 .link2,
 .link3 {
   box-sizing: border-box;
-  margin-top: 10px;
   text-align: left;
   background-color: white;
-  border: none;
+
+  /* border: none;
+  border-bottom:2px solid rgb(173, 169, 169); */
+
   height: auto;
   width: auto;
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
-  padding: 5px 20px 0 16px;
+  margin: 20px 28px 10px 16px;
+}
+
+.link2,
+.link3 {
+  border-bottom: 2px solid rgb(173, 169, 169);
+  padding-bottom: 30px;
 }
 
 .panel {
