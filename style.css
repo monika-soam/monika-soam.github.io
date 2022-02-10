@@ -1,11 +1,26 @@
 body {
   align-items: center;
+  text-align: center;
 }
 
-.main {
+.work_section {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 100px;
+  width: 420px;
+  height: auto;
+  margin-left: calc(50% - 160px);
+  background-color: #f7f7f9;
+  justify-content: center;
+  text-align: left;
+}
+
+.main_logo {
   margin: auto;
+  margin-top: 20px;
   width: 375px;
   height: 718px;
+  background: #fff;
 }
 
 .header {
@@ -116,6 +131,7 @@ ul {
   width: 375px;
   height: 700px;
   font-family: sans-serif;
+  background: #fff;
 }
 
 .content1 {
@@ -211,8 +227,7 @@ ul {
   flex-direction: column;
   margin: auto;
   width: 375px;
-
-  /* height: 718px; */
+  background: #fff;
 }
 
 .content2 {
@@ -320,7 +335,7 @@ ul {
   align-items: baseline;
   row-gap: 10px;
   width: 280px;
-  padding: 5px 20px 0 16px;
+  padding: 5px 0 0 16px;
   overflow: hidden;
 }
 
@@ -333,7 +348,7 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   color: #253858;
   background: #f7f7f9;
-  padding: 5px 60px 5px 5px;
+  padding: 5px 40px 5px 5px;
 }
 
 .icon {
@@ -346,76 +361,4 @@ ul {
 
 .icon3 {
   margin-left: 230px;
-}
-
-.main3 {
-  margin: auto;
-  width: 375px;
-  height: 718px;
-  text-align: center;
-  background-image: url("/img/header-shapes-mobile-contact.svg");
-  background-color: rgba(96, 112, 255, 0.8);
-  display: flex;
-  flex-direction: column;
-}
-
-.content3 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  text-align: center;
-}
-
-.content3 h1 {
-  margin-top: 50px;
-  font-size: 45px;
-  color: white;
-  line-height: 54px;
-}
-
-.content3 p {
-  color: #ebebff;
-  line-height: 24px;
-  font-size: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0;
-}
-
-form {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  row-gap: 15px;
-  width: 370px;
-  padding: 30px;
-}
-
-input {
-  height: 50px;
-  border-radius: 8px;
-  font-size: 20px;
-}
-
-input:valid {
-  border-color: green;
-}
-
-input:invalid {
-  border-color: red;
-}
-
-.btnform {
-  width: 160px;
-  height: 50px;
-  background: #fff;
-  padding: 12px 16px;
-  border-radius: 8px;
-  color: #6070ff;
-  font-size: 18px;
-  text-align: center;
-}
-
-textarea {
-  border-radius: 8px;
-  font-size: 16px;
 }
