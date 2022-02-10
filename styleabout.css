@@ -121,40 +121,37 @@ ul {
   margin-top: 10px;
 }
 
-.accordian ul {
+.accordian {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   margin-top: 0;
 }
 
-.accordian li {
+.accordian .link1,
+.link2,
+.link3 {
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: left;
   background-color: white;
   border: none;
-  height: 50px;
+  height: auto;
+  width: auto;
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
   padding: 5px 20px 0 16px;
 }
 
-.accordian .link:hover {
-  background-color: rgb(196, 190, 190);
-  width: 340px;
-  border-radius: 10px;
-}
-
 .panel {
-  height: 210px;
+  height: 240px;
   display: grid;
   font-size: 18px;
   grid-template-rows: auto auto auto;
   align-items: baseline;
   row-gap: 10px;
-  width: 320px;
+  width: 280px;
   padding: 5px 20px 0 16px;
   overflow: hidden;
 }
@@ -171,6 +168,8 @@ ul {
   padding: 5px 60px 5px 5px;
 }
 
-.open {
-  display: grid;
+hr {
+  color: gray;
+  border-style: solid;
+  width: auto;
 }
