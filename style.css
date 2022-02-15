@@ -376,7 +376,7 @@ ul {
 .footer {
   margin: auto;
   width: 375px;
-  height: 779px;
+  height: 775px;
   text-align: center;
   background: url("./img/contact-form-background.svg");
   background-position: right;
@@ -422,6 +422,7 @@ input {
   height: 50px;
   border-radius: 8px;
   font-size: 17px;
+  width:300px;
 }
 
 input:valid {
