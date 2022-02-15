@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .work_section {
   display: grid;
   grid-template-columns: auto;
@@ -42,7 +46,7 @@ body {
 .header a {
   position: static;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
@@ -62,7 +66,7 @@ body {
 
 .content h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -75,7 +79,7 @@ body {
 .content h6 {
   color: #344563;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -89,7 +93,7 @@ body {
 .content h3 {
   color: #7f8cff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
@@ -237,14 +241,14 @@ ul {
 .content2 {
   display: flex;
   flex-direction: column;
-
+  
   /* height: 588px; */
   padding: 85px 20px 0 16px;
 }
 
 .content2 h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -272,7 +276,7 @@ ul {
 .content2 h6 {
   color: #344563;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -286,7 +290,7 @@ ul {
 .content2 h3 {
   color: #7f8cff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
@@ -316,10 +320,10 @@ ul {
   box-sizing: border-box;
   text-align: left;
   background-color: white;
-
+  
   /* border: none;
   border-bottom:2px solid rgb(173, 169, 169); */
-
+  
   height: auto;
   width: auto;
   font-size: 24px;
@@ -372,12 +376,15 @@ ul {
 .footer {
   margin: auto;
   width: 375px;
-  height: 718px;
+  height: 779px;
   text-align: center;
-  background-image: url("./img/header-shapes-mobile-contact.svg");
-  background-color: rgba(96, 112, 255, 0.8);
+  background: url("./img/contact-form-background.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #6070ff;
   display: flex;
   flex-direction: column;
+  border-top-left-radius: 100px;
 }
 
 .content_footer {
@@ -402,6 +409,7 @@ ul {
   padding-right: 30px;
   margin: 0;
 }
+
 form {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -413,7 +421,7 @@ form {
 input {
   height: 50px;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 input:valid {
@@ -422,4 +430,32 @@ input:valid {
 
 input:invalid {
   border-color: red;
+}
+
+button {
+  width: 160px;
+  height: 50px;
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+}
+
+button:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+button:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+textarea {
+  border-radius: 8px;
+  font-size: 16px;
 }
