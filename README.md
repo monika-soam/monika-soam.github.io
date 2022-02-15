@@ -2,7 +2,8 @@
 # My Portfolio
 
 > "Portfolio-setup-and-mobile-version-skeleton".
-"Added About myself section, contact me and Works section page".
+"Added About myself section,Works section page".
+"Added the footer Contact us page"
 
 
 ## Built With
