@@ -475,6 +475,9 @@ input:invalid {
     font-size: 24px;
     margin: 0;
   }
+  .content button{
+    width:35%;
+  }
 
   form {
     justify-items: left;
@@ -488,7 +491,7 @@ input:invalid {
 
   form button {
     margin-left: 0;
-    width: 30%;
+    width: 40%;
     border: 0;
     background: #fff;
     font-size: 18px;
