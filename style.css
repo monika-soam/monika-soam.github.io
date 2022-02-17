@@ -70,6 +70,11 @@ header h1 {
   font-weight: bold;
   letter-spacing: 0.37px;
   color: #091e42;
+  margin-bottom:5%;
+}
+.main .about_h4{
+  width:40%;
+ margin-bottom:none;
 }
 
 .main p {
@@ -401,7 +406,10 @@ input:invalid {
   }
 
   .main h4 {
-    width: 40%;
+    width: 80%;
+  }
+  .main .about_h4{
+    width:10%;
   }
 
   .accodian {
