@@ -108,7 +108,7 @@ form button {
   background: #fff;
   border: 1px solid#396DF2;
   text-align: center;
-  width: 55%;
+  width: 53%;
   padding: 2%;
   font-weight: 500;
   font-size: 17px;
@@ -363,7 +363,7 @@ input:invalid {
 
 @media only screen and (min-width: 992px) {
   form button {
-    width: 45%;
+    width: 48%;
   }
 
   form button:hover {
@@ -385,11 +385,11 @@ input:invalid {
 
 @media only screen and (max-width: 992px) {
   form button {
-    width: 45%;
+    width: 48%;
   }
 
   .main button {
-    width: 70%;
+    width: 66%;
   }
 
   form button:hover {
@@ -448,7 +448,7 @@ input:invalid {
 
   form button {
     margin-left: 0;
-    width: 50%;
+    width: 45%;
     border: 0;
     background: #fff;
     font-size: 18px;
@@ -456,7 +456,7 @@ input:invalid {
   }
 
   .main button {
-    width: 60%;
+    width: 45%;
   }
 
   .main h4 {
