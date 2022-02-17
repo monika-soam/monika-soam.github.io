@@ -93,7 +93,7 @@ header h1 {
 }
 
 form button {
-  width: 30%;
+  width: 45%;
   padding: 3%;
   border-radius: 0.7em;
   font-weight: 500;
@@ -108,7 +108,7 @@ form button {
   background: #fff;
   border: 1px solid#396DF2;
   text-align: center;
-  width: 40%;
+  width: 55%;
   padding: 2%;
   font-weight: 500;
   font-size: 17px;
@@ -169,8 +169,8 @@ form button {
   background: #fff;
   border: 1px solid#396DF2;
   text-align: center;
-  width: 30%;
-  padding: 3% 2%;
+  width: 40%;
+  padding: 3% 1%;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -204,8 +204,6 @@ form button {
 .Inner_content {
   display: flex;
   flex-flow: wrap;
-
-  /* justify-content: baseline; */
   column-gap: 3%;
   margin-top: 0;
   margin-bottom: 0;
@@ -363,6 +361,49 @@ input:invalid {
   border-color: red;
 }
 
+@media only screen and (min-width: 992px) {
+  form button {
+    width: 45%;
+  }
+
+  form button:hover {
+    background: #6070ff;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  }
+
+  form button:active {
+    color: #fff;
+    background: #2230d2;
+  }
+
+  .button {
+    width: 35%;
+    padding: 2%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  form button {
+    width: 45%;
+  }
+
+  .main button {
+    width: 70%;
+  }
+
+  form button:hover {
+    background: #6070ff;
+    color: #fff;
+    box-shadow: 0 8px 16px;
+  }
+
+  form button:active {
+    color: #fff;
+    background: #2230d2;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .home {
     background-image: url(./img/header-shapes-mobile.svg);
@@ -403,6 +444,19 @@ input:invalid {
     margin: auto;
     padding: 10%;
     width: 100%;
+  }
+
+  form button {
+    margin-left: 0;
+    width: 50%;
+    border: 0;
+    background: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .main button {
+    width: 60%;
   }
 
   .main h4 {
@@ -486,17 +540,9 @@ input:invalid {
     margin-bottom: 10%;
   }
 
-  form button {
-    margin-left: 0;
+  .button {
+    padding: 2%;
     width: 40%;
-    border: 0;
-    background: #fff;
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .content button {
-    width: 35%;
   }
 
   textarea {
