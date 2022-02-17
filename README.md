@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # My Portfolio
 
-> "Portfolio-desktop-version-skeleton".
-"Added Home section,Work cards, About me section and Contact us".
+Portfolio-desktop-version-skeleton
+Added Home section,Work cards, About me section and Contact us
+
 
 
 ## Built With
