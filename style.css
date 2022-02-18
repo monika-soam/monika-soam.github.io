@@ -16,6 +16,9 @@ a {
   background-image: url(./img/Header-bg.svg);
   border-bottom-left-radius: 20%;
   background-color: white;
+  height: 846px;
+  display: flex;
+  align-items: center;
 }
 
 header {
@@ -41,6 +44,46 @@ header h1 {
   column-gap: 10%;
 }
 
+.nav_bar li {
+  transition: font-size 2s ease-in;
+  transition: color 2s ease-in;
+}
+
+.Inner_content_button li {
+  font-weight: 500;
+  font-size: 12px;
+  width: auto;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 2% 5%;
+}
+
+.panel li {
+  font-weight: 500;
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  justify-content: center;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  color: #344563;
+  background: #f7f7f9;
+  padding: 0.5em;
+}
+
+.nav_bar li:hover {
+  font-size: 18px;
+  color: #fff;
+  background-color: #6070ff;
+  padding: 3%;
+  border-radius: 0.8em;
+}
+
 .linkimg {
   width: 70%;
 }
@@ -64,6 +107,8 @@ header h1 {
 }
 
 .main h4 {
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 48px;
   line-height: 60px;
   align-items: center;
@@ -71,6 +116,17 @@ header h1 {
   letter-spacing: 0.37px;
   color: #091e42;
   margin-bottom: 5%;
+  animation: typing 3s steps(200, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .main .about_h4 {
@@ -102,6 +158,9 @@ form button {
   letter-spacing: 0.03em;
   color: #6070ff;
   border: 0;
+  transition: background-color 500ms ease-in;
+  transition: border-radius 500ms ease-in;
+  transition: color 500ms ease-out;
 }
 
 .main button {
@@ -116,6 +175,27 @@ form button {
   letter-spacing: 0.03em;
   color: #396df2;
   border-radius: 0.7em;
+  transition: background-color 500ms ease-in;
+  transition: border-radius 500ms ease-in;
+  transition: color 500ms ease-out;
+}
+
+form button:hover {
+  background: #6070ff;
+  color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+form button:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+.main button:hover {
+  background: #6070ff;
+  color: #fff;
+  border-radius: 2em;
 }
 
 .social_img {
@@ -177,6 +257,15 @@ form button {
   letter-spacing: 0.03em;
   color: #396df2;
   border-radius: 1em;
+  transition: background-color 500ms ease-in;
+  transition: border-radius 500ms ease-in;
+  transition: color 500ms ease-out;
+}
+
+.botton:hover {
+  background-color: #6070ff;
+  border-radius: 2em;
+  color: white;
 }
 
 .Inner_content_button ul {
@@ -187,18 +276,6 @@ form button {
   line-height: 24px;
   color: #6b778c;
   margin-top: 0.5em;
-}
-
-.Inner_content_button li {
-  font-weight: 500;
-  font-size: 12px;
-  width: auto;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 2% 5%;
 }
 
 .Inner_content {
@@ -260,21 +337,6 @@ form button {
   column-gap: 1em;
   list-style: none;
   padding-left: 0;
-}
-
-.panel li {
-  font-weight: 500;
-  font-size: 20px;
-  width: 25%;
-  height: auto;
-  justify-content: center;
-  line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 0;
-  color: #344563;
-  background: #f7f7f9;
-  padding: 0.5em;
 }
 
 span {
@@ -342,17 +404,6 @@ form textarea {
   line-height: 20px;
 }
 
-form button:hover {
-  background: #6070ff;
-  color: #fff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-}
-
-form button:active {
-  color: #fff;
-  background: #2230d2;
-}
-
 input:valid {
   border-color: green;
 }
@@ -364,43 +415,57 @@ input:invalid {
 @media only screen and (min-width: 992px) {
   form button {
     width: 48%;
-  }
-
-  form button:hover {
-    background: #6070ff;
-    color: #fff;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  }
-
-  form button:active {
-    color: #fff;
-    background: #2230d2;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 500ms ease-in;
+    transition: color 500ms ease-out;
   }
 
   .button {
     width: 35%;
     padding: 2%;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 500ms ease-in;
+    transition: color 500ms ease-out;
+  }
+
+  .button:hover {
+    background-color: #6979ff;
+    border-radius: 2em;
+    color: #fff;
   }
 }
 
 @media only screen and (max-width: 992px) {
   form button {
     width: 48%;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 500ms ease-in;
+    transition: color 500ms ease-out;
   }
 
   .main button {
     width: 66%;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 500ms ease-in;
+    transition: color 500ms ease-out;
   }
 
   form button:hover {
     background: #6070ff;
     color: #fff;
+    border-radius: 2em;
     box-shadow: 0 8px 16px;
   }
 
   form button:active {
     color: #fff;
     background: #2230d2;
+  }
+
+  .main button:hover {
+    background: #6070ff;
+    color: #fff;
+    border-radius: 2em;
   }
 }
 
@@ -453,14 +518,46 @@ input:invalid {
     background: #fff;
     font-size: 18px;
     text-align: center;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 500ms ease-in;
+    transition: color 500ms ease-out;
   }
 
   .main button {
     width: 45%;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 500ms ease-in;
+    transition: color 500ms ease-out;
+  }
+
+  form button:hover {
+    background: #6070ff;
+    color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 8px 16px;
+  }
+
+  .main button:hover {
+    background: #6070ff;
+    color: #fff;
+    border-radius: 2em;
   }
 
   .main h4 {
     width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(200, end);
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
   }
 
   .main .about_h4 {
@@ -543,6 +640,15 @@ input:invalid {
   .button {
     padding: 2%;
     width: 40%;
+    transition: background-color 500ms ease-in;
+    transition: border-radius 500ms ease-in;
+    transition: color 500ms ease-out;
+  }
+
+  .button:hover {
+    background-color: #6979ff;
+    border-radius: 2em;
+    color: #fff;
   }
 
   textarea {
