@@ -44,6 +44,18 @@ header h1 {
   column-gap: 10%;
 }
 
+.nav_bar ul {
+  display: flex;
+  text-align: right;
+  list-style: none;
+  margin-left: 40vw;
+  column-gap: 10%;
+}
+
+.nav_bar li {
+  transition: font-size 5s easeInOutBounce 1s;
+}
+
 .linkimg {
   width: 70%;
 }
