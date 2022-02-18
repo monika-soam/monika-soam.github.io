@@ -67,6 +67,8 @@ header h1 {
 }
 
 .main h4 {
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 48px;
   line-height: 60px;
   align-items: center;
@@ -81,7 +83,7 @@ header h1 {
   from {
     width: 0;
   }
-
+  
   to {
     width: 100%;
   }
@@ -522,14 +524,16 @@ input:invalid {
   }
   .main h4 {
     width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
     animation: typing 3s steps(200, end);
   }
-
+  
   @keyframes typing {
     from {
       width: 0;
     }
-  
+    
     to {
       width: 100%;
     }
