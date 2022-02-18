@@ -44,16 +44,44 @@ header h1 {
   column-gap: 10%;
 }
 
-.nav_bar ul {
-  display: flex;
-  text-align: right;
-  list-style: none;
-  margin-left: 40vw;
-  column-gap: 10%;
+.nav_bar li {
+  transition: font-size 2s ease-in;
+  transition: color 2s ease-in;
 }
 
-.nav_bar li {
-  transition: font-size 5s easeInOutBounce 1s;
+.Inner_content_button li {
+  font-weight: 500;
+  font-size: 12px;
+  width: auto;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 2% 5%;
+}
+
+.panel li {
+  font-weight: 500;
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  justify-content: center;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  color: #344563;
+  background: #f7f7f9;
+  padding: 0.5em;
+}
+
+.nav_bar li:hover {
+  font-size: 18px;
+  color: #fff;
+  background-color: #6070ff;
+  padding: 3%;
+  border-radius: 0.8em;
 }
 
 .linkimg {
@@ -250,18 +278,6 @@ form button:active {
   margin-top: 0.5em;
 }
 
-.Inner_content_button li {
-  font-weight: 500;
-  font-size: 12px;
-  width: auto;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 2% 5%;
-}
-
 .Inner_content {
   display: flex;
   flex-flow: wrap;
@@ -321,21 +337,6 @@ form button:active {
   column-gap: 1em;
   list-style: none;
   padding-left: 0;
-}
-
-.panel li {
-  font-weight: 500;
-  font-size: 20px;
-  width: 25%;
-  height: auto;
-  justify-content: center;
-  line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 0;
-  color: #344563;
-  background: #f7f7f9;
-  padding: 0.5em;
 }
 
 span {
