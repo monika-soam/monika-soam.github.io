@@ -16,6 +16,9 @@ a {
   background-image: url(./img/Header-bg.svg);
   border-bottom-left-radius: 20%;
   background-color: white;
+  height: 846px;
+  display: flex;
+  align-items: center;
 }
 
 header {
@@ -71,6 +74,17 @@ header h1 {
   letter-spacing: 0.37px;
   color: #091e42;
   margin-bottom: 5%;
+  animation: typing 3s steps(200, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .main .about_h4 {
@@ -508,7 +522,19 @@ input:invalid {
   }
   .main h4 {
     width: 80%;
+    animation: typing 3s steps(200, end);
   }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
   .main .about_h4 {
     width: 10%;
   }
