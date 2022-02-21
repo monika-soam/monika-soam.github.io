@@ -436,6 +436,17 @@ input:invalid {
 }
 
 @media only screen and (max-width: 992px) {
+  .portfolio_work,
+  .portfolio_work1 {
+    padding: 1%;
+    column-gap: 1%;
+  }
+
+  .work img {
+    border-radius: 1em;
+    object-fit: cover;
+  }
+
   form button {
     width: 48%;
     transition: background-color 500ms ease-in;
@@ -493,11 +504,17 @@ input:invalid {
   .portfolio_work {
     display: flex;
     flex-direction: column;
+    column-gap: 2%;
+    padding: 3%;
+    border-radius: 2em;
   }
 
   .portfolio_work1 {
     display: flex;
     flex-direction: column-reverse;
+    column-gap: 2%;
+    padding: 3%;
+    border-radius: 2em;
   }
 
   .about_me {
@@ -524,7 +541,7 @@ input:invalid {
   }
 
   .main button {
-    width: 45%;
+    width: 50%;
     transition: background-color 500ms ease-in;
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
