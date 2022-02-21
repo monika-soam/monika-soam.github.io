@@ -123,6 +123,7 @@ header h1 {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -418,6 +419,7 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+
   .button {
     width: 35%;
     padding: 2%;
@@ -425,6 +427,7 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+
   .button:hover {
     background-color: #6979ff;
     border-radius: 2em;
@@ -438,32 +441,38 @@ input:invalid {
     padding: 1%;
     column-gap: 1%;
   }
+
   .work img {
     border-radius: 1em;
     object-fit: cover;
   }
+
   form button {
     width: 48%;
     transition: background-color 500ms ease-in;
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+
   .main button {
     width: 66%;
     transition: background-color 500ms ease-in;
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+
   form button:hover {
     background: #6070ff;
     color: #fff;
     border-radius: 2em;
     box-shadow: 0 8px 16px;
   }
+
   form button:active {
     color: #fff;
     background: #2230d2;
   }
+
   .main button:hover {
     background: #6070ff;
     color: #fff;
@@ -477,17 +486,21 @@ input:invalid {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .nav_bar .link {
     display: none;
   }
+
   .nav_bar img {
     display: block;
     margin-left: 60%;
     width: 30%;
   }
+
   .header h1 {
     font-size: 22px;
   }
+
   .portfolio_work {
     display: flex;
     flex-direction: column;
@@ -495,6 +508,7 @@ input:invalid {
     padding: 3%;
     border-radius: 2em;
   }
+
   .portfolio_work1 {
     display: flex;
     flex-direction: column-reverse;
@@ -502,15 +516,18 @@ input:invalid {
     padding: 3%;
     border-radius: 2em;
   }
+
   .about_me {
     display: flex;
     flex-direction: column;
   }
+
   .main {
     margin: auto;
     padding: 10%;
     width: 100%;
   }
+
   form button {
     margin-left: 0;
     width: 45%;
@@ -522,44 +539,53 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+
   .main button {
     width: 50%;
     transition: background-color 500ms ease-in;
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+
   form button:hover {
     background: #6070ff;
     color: #fff;
     border-radius: 2em;
     box-shadow: 0 8px 16px;
   }
+
   .main button:hover {
     background: #6070ff;
     color: #fff;
     border-radius: 2em;
   }
+
   .main h4 {
     width: 80%;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(200, end);
   }
+
   @keyframes typing {
     from {
       width: 0;
     }
+
     to {
       width: 100%;
     }
   }
+
   .main .about_h4 {
     width: 100%;
   }
+
   .accodian {
     margin-top: 0;
     padding-top: 0;
   }
+
   .link1,
   .link2,
   .link3 {
@@ -570,6 +596,7 @@ input:invalid {
     font-weight: bold;
     color: black;
   }
+
   .panel {
     display: grid;
     font-size: 18px;
@@ -577,6 +604,7 @@ input:invalid {
     row-gap: 0.8em;
     width: 90%;
   }
+
   .panel li {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -588,15 +616,18 @@ input:invalid {
     color: #253858;
     background: #f7f7f9;
   }
+
   .panel img {
     width: 70%;
     padding-top: 0%;
   }
+
   span {
     width: 100%;
     text-align: right;
     margin-right: 2em;
   }
+
   .contact {
     padding: 3%;
     margin: auto;
@@ -605,12 +636,14 @@ input:invalid {
     background-repeat: no-repeat;
     background-color: #6070ff;
   }
+
   .content_footer p {
     padding-left: 8%;
     padding-right: 8%;
     font-size: 24px;
     margin: 0;
   }
+
   form {
     justify-items: left;
     display: grid;
@@ -620,6 +653,7 @@ input:invalid {
     padding-left: 10%;
     margin-bottom: 10%;
   }
+
   .button {
     padding: 2%;
     width: 40%;
@@ -627,11 +661,13 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+
   .button:hover {
     background-color: #6979ff;
     border-radius: 2em;
     color: #fff;
   }
+
   textarea {
     border-radius: 8px;
     font-size: 16px;
