@@ -11,11 +11,17 @@ Added Home section,Work cards, About me section and Contact us
 - HTML & CSS
 - linters
 
+## Live Demo
+ https://monika-soam.github.io/Portfolio-setup-and-mobile-version-skeleton/
+
+ 
+
 👤 **Monika**
 
 - GitHub: https://github.com/monika-soam
 - Twitter: @monikasoam
 - LinkedIn: linkedin.com/in/monika-soam-✓-16b59925
+
 
 
 ## Show your support
