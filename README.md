@@ -12,7 +12,7 @@ Added Home section,Work cards, About me section and Contact us
 - linters
 
 ## Live Demo
- https://monika-soam.github.io/Portfolio-setup-and-mobile-version-skeleton/
+ [https://monika-soam.github.io/Portfolio-setup-and-mobile-version-skeleton/]
 
  
 
