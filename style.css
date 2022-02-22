@@ -29,7 +29,7 @@ header {
   padding: 2%;
 }
 
-header h1 {
+.my_logo {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
@@ -45,17 +45,17 @@ header h1 {
 }
 
 .nav_bar li {
-  transition: font-size 2s ease-in;
-  transition: color 2s ease-in;
+  transition: font-size 0.5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
-.Inner_content_button li {
+.inner_content_button li {
   font-weight: 500;
   font-size: 12px;
   width: auto;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #0017eb;
   background-color: #ebebff;
   border-radius: 8px;
   padding: 2% 5%;
@@ -106,7 +106,8 @@ header h1 {
   margin: 20% 20%;
 }
 
-.main h4 {
+.main h1,
+h2 {
   overflow: hidden;
   white-space: nowrap;
   font-size: 48px;
@@ -144,7 +145,7 @@ header h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #0017eb;
   margin-top: 0;
 }
 
@@ -156,7 +157,7 @@ form button {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #0017eb;
   border: 0;
   transition: background-color 500ms ease-in;
   transition: border-radius 500ms ease-in;
@@ -165,7 +166,7 @@ form button {
 
 .main button {
   background: #fff;
-  border: 1px solid#396DF2;
+  border: 1px solid#0017EB;
   text-align: center;
   width: 53%;
   padding: 2%;
@@ -230,7 +231,7 @@ form button:active {
   margin-top: 5%;
 }
 
-.content h4 {
+.content h3 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
@@ -247,7 +248,7 @@ form button:active {
 
 .button {
   background: #fff;
-  border: 1px solid#396DF2;
+  border: 1px solid#0017EB;
   text-align: center;
   width: 40%;
   padding: 3% 1%;
@@ -255,7 +256,7 @@ form button:active {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #396df2;
+  color: #0017eb;
   border-radius: 1em;
   transition: background-color 500ms ease-in;
   transition: border-radius 500ms ease-in;
@@ -268,7 +269,7 @@ form button:active {
   color: white;
 }
 
-.Inner_content_button ul {
+.inner_content_button ul {
   display: flex;
   column-gap: 3%;
   padding-left: 0;
@@ -278,7 +279,7 @@ form button:active {
   margin-top: 0.5em;
 }
 
-.Inner_content {
+.inner_content {
   display: flex;
   flex-flow: wrap;
   column-gap: 3%;
@@ -289,17 +290,18 @@ form button:active {
   color: #344563;
 }
 
-.Inner_content p {
+.inner_content p {
   color: #6b778c;
 }
 
-.Inner_content h3 {
+.inner_content h3 {
   margin-top: 0.7em;
 }
 
 .about_me {
   display: grid;
   grid-template-columns: 50% 50%;
+  color: #172b4d;
   background-color: white;
   border-top-right-radius: 10em;
 }
@@ -361,7 +363,7 @@ span {
   text-align: center;
 }
 
-.content_footer h5 {
+.content_footer h2 {
   font-weight: bold;
   font-size: 45px;
   line-height: 54px;
@@ -396,8 +398,9 @@ form input {
 }
 
 form textarea {
-  color: #b3bac5;
+  color: #353b45;
   text-align: left;
+  background-color: #fff;
   width: 85%;
   padding: 4% 5%;
   font-size: 17px;
@@ -462,7 +465,7 @@ input:invalid {
   }
 
   form button:hover {
-    background: #6070ff;
+    background: #0017eb;
     color: #fff;
     border-radius: 2em;
     box-shadow: 0 8px 16px;
@@ -497,7 +500,7 @@ input:invalid {
     width: 30%;
   }
 
-  .header h1 {
+  .my_logo {
     font-size: 22px;
   }
 
@@ -548,7 +551,7 @@ input:invalid {
   }
 
   form button:hover {
-    background: #6070ff;
+    background: #0017eb;
     color: #fff;
     border-radius: 2em;
     box-shadow: 0 8px 16px;
@@ -560,7 +563,7 @@ input:invalid {
     border-radius: 2em;
   }
 
-  .main h4 {
+  .main h1 {
     width: 80%;
     overflow: hidden;
     white-space: nowrap;
