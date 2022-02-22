@@ -45,8 +45,8 @@ header {
 }
 
 .nav_bar li {
-  transition: font-size 2s ease-in;
-  transition: color 2s ease-in;
+  transition: font-size 0.5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
 .Inner_content_button li {
@@ -106,7 +106,7 @@ header {
   margin: 20% 20%;
 }
 
-.main h4 {
+.main h1 {
   overflow: hidden;
   white-space: nowrap;
   font-size: 48px;
@@ -560,7 +560,7 @@ input:invalid {
     border-radius: 2em;
   }
 
-  .main h4 {
+  .main h1 {
     width: 80%;
     overflow: hidden;
     white-space: nowrap;
