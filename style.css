@@ -106,7 +106,8 @@ header {
   margin: 20% 20%;
 }
 
-.main h1 {
+.main h1,
+h4 {
   overflow: hidden;
   white-space: nowrap;
   font-size: 48px;
@@ -143,7 +144,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #0017EB;
   margin-top: 0;
 }
 
@@ -299,6 +300,7 @@ form button:active {
 .about_me {
   display: grid;
   grid-template-columns: 50% 50%;
+  color: #172B4D;
   background-color: white;
   border-top-right-radius: 10em;
 }
@@ -395,8 +397,9 @@ form input {
 }
 
 form textarea {
-  color: #b3bac5;
+  color: #353B45;
   text-align: left;
+  background-color: #FFFFFF;
   width: 85%;
   padding: 4% 5%;
   font-size: 17px;
