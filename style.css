@@ -29,7 +29,7 @@ header {
   padding: 2%;
 }
 
-header h1 {
+.my_logo {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
@@ -497,7 +497,7 @@ input:invalid {
     width: 30%;
   }
 
-  .header h1 {
+  .my_logo {
     font-size: 22px;
   }
 
