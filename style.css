@@ -509,6 +509,12 @@ input:invalid {
   .my_logo {
     font-size: 22px;
   }
+  .visible {
+    display: block;
+  }
+  .invisible {
+    display: none;
+  }
   .menu_bar {
     display: none;
     width: 100%;
