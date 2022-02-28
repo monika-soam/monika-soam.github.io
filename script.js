@@ -10,7 +10,6 @@ btnHeader.addEventListener('click', () => {
   hideMenu();
 });
 
-
 hamBurger.addEventListener('click', () => {
   divMenu.style.display = 'block';
 });
