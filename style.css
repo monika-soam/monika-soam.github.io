@@ -45,26 +45,13 @@ header {
   column-gap: 10%;
 }
 
-.nav_bar li {
+.link:hover {
   transition: font-size 0.5s ease-in;
   transition: color 0.5s ease-in;
 }
 
 .menu_bar {
   display: none;
-  width: 100%;
-}
-
-.menu_bar li {
-  list-style: none;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.menu_bar_header {
-  width: 100%;
-  text-align: right;
-  padding: 1%;
 }
 
 .inner_content_button li {
@@ -94,7 +81,7 @@ header {
   padding: 0.5em;
 }
 
-.nav_bar li:hover {
+.nav_bar .link:hover {
   font-size: 18px;
   color: #fff;
   background-color: #6070ff;
@@ -115,6 +102,7 @@ header {
   font-size: 15px;
   line-height: 20px;
   color: #344563;
+  padding: 0.3em;
 }
 
 .main {
@@ -439,6 +427,9 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
+  .menu_bar {
+    display: none;
+  }
   .button {
     width: 35%;
     padding: 2%;
@@ -515,14 +506,26 @@ input:invalid {
   .invisible {
     display: none;
   }
-  .menu_bar {
-    display: none;
-    width: 100%;
+  .menu_bar #btn-header {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 30px;
+    border: 0;
+    background-color: rgba(96, 112, 255, 0);
+    color: white;
   }
-  .menu_bar li {
+  .menu_bar .link a:hover {
+    color: #f1f1f1;
+  }
+  .menu_bar li,
+  a {
     list-style: none;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    left: 0;
+    color: #fff;
   }
   .menu_bar_header {
     width: 100%;

@@ -37,11 +37,22 @@
         </ul>
 
       </nav>
-    </header>
-    <div class="d-flex flex-column bg-light col-sm-12 menu_bar" id="menu-bar">
-      <div class="menu_bar_header">
-        <button type="button" id="btn-header">&times;</button>
+      <div class=" menu_bar" id="menu-bar">
+        <a class="menu_bar_header" id="mobile_menu">
+          <button type="button" id="btn-header">&times;</button>
+        </a>
+        <ul class="menu_bar_content">
+          <li class="link" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>
+          <li class="link" onclick="hideMenu()"><a href="#aboutme">About</a></li>
+          <li class="link" onclick="hideMenu()"><a href="#contact">Contact</a></li>
+
+        </ul>
       </div>
+    </header>
+    <div class="flex-column menu_bar" id="menu-bar">
+      <a class="menu_bar_header" id="mobile_menu">
+        <button type="button" id="btn-header">&times;</button>
+      </a>
       <ul class="d-flex flex-column jutify-content-center align-items-center gap-4">
         <li class="link"><a href="#portfolio">Portfolio</a></li>
         <li class="link"><a href="#aboutme">About</a></li>
@@ -243,7 +254,7 @@
 
     </section>
   </div>
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
