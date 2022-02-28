@@ -11,3 +11,9 @@ btnHeader.addEventListener("click", () => {
 hamBurger.addEventListener('click', () => {
   divMenu.style.display = 'block';
 });
+
+document.addEventListener('mouseup', (e) => {
+  if (!menuBarContent.contains(e.target)) {
+    hideMenu();
+  }
+});
