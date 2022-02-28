@@ -38,32 +38,20 @@
 
       </nav>
       <div class=" menu_bar" id="menu-bar">
-        <a class="menu_bar_header" id="mobile_menu">
+        <div class="menu_bar_header" id="mobile_menu">
           <button type="button" id="btn-header">&times;</button>
-        </a>
+        </div>
         <ul class="menu_bar_content">
-          <li class="link" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>
-          <li class="link" onclick="hideMenu()"><a href="#aboutme">About</a></li>
-          <li class="link" onclick="hideMenu()"><a href="#contact">Contact</a></li>
+          <li class="link anchor" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>
+          <li class="link anchor" onclick="hideMenu()"><a href="#aboutme">About</a></li>
+          <li class="link anchor" onclick="hideMenu()"><a href="#contact">Contact</a></li>
 
         </ul>
       </div>
     </header>
-    <div class="flex-column menu_bar" id="menu-bar">
-      <a class="menu_bar_header" id="mobile_menu">
-        <button type="button" id="btn-header">&times;</button>
-      </a>
-      <ul class="d-flex flex-column jutify-content-center align-items-center gap-4">
-        <li class="link"><a href="#portfolio">Portfolio</a></li>
-        <li class="link"><a href="#aboutme">About</a></li>
-        <li class="link"><a href="#contact">Contact</a></li>
-
-      </ul>
-    </div>
-
     <section class="home">
       <div class="main">
-        <h1>I’m Monika<br> Glad to see you!</h1>
+        <h1>I’m Monika<br /> Glad to see you!</h1>
         <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <h2></h2>
         <h3>LET’S CONNECT</h3>
@@ -250,11 +238,9 @@
         <textarea name="message" id="message1" cols="30" rows="10" placeholder="Write your meassage here" maxlength="500" required></textarea>
         <button type="submit">Get It Touch</button>
       </form>
-
-
     </section>
   </div>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
