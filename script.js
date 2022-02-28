@@ -1,12 +1,15 @@
-const btnHeader = document.getElementById("btn-header");
-const divMenu = document.getElementById("menu-bar");
+const btnHeader = document.getElementById('btn-header');
+const divMenu = document.getElementById('menu-bar');
+const hamBurger = document.getElementById('hamburger');
+const menuBarContent = document.querySelector('.menu_bar_content');
 
 function hideMenu() {
-  divMenu.style.display = "none";
+  divMenu.style.display = 'none';
 }
-btnHeader.addEventListener("click", () => {
+btnHeader.addEventListener('click', () => {
   hideMenu();
 });
+
 
 hamBurger.addEventListener('click', () => {
   divMenu.style.display = 'block';
