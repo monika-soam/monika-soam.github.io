@@ -518,14 +518,6 @@ input:invalid {
     font-size: 22px;
   }
 
-  .visible {
-    display: block;
-  }
-
-  .invisible {
-    display: none;
-  }
-
   .menu_bar {
     height: 100%;
     width: 100%;
@@ -537,39 +529,31 @@ input:invalid {
 
   .menu_bar_content {
     text-align: left;
-    margin-top: 12%;
+    margin-top: 7%;
   }
 
-  .menu_bar #btn-header {
-    position: absolute;
-    margin-top: 8%;
-    margin-left: 15%;
-    text-align: left;
-    font-size: 30px;
-    border: 0;
-    background-color: rgba(96, 112, 255, 0);
+  .anchor {
+    list-style: none;
+    font-size: 32px;
+    padding: 5%;
+  }
+
+  .anchor a {
     color: white;
   }
 
-  .menu_bar li,
-  a {
-    list-style: none;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 44px;
-    left: 0;
-    padding: 0.3em;
-    color: #fff;
-  }
-
-  .menu_bar .link a:hover {
-    color: #f1f1f1;
-  }
-
   .menu_bar_header {
-    width: 100%;
     text-align: right;
-    padding: 1%;
+    margin-top: 8%;
+    margin-right: 10%;
+    font-size: 30px;
+  }
+
+  #btn-header {
+    border: 0;
+    background-color: rgba(96, 112, 255, 0);
+    color: white;
+    font-size: 42px;
   }
 
   .portfolio_work {
@@ -595,7 +579,7 @@ input:invalid {
 
   .main {
     margin: auto;
-    padding: 10% 5%;
+    padding: 10%;
     width: 100%;
   }
 
@@ -619,7 +603,7 @@ input:invalid {
   }
 
   form button:hover {
-    background: #0017eb;
+    background: #6070ff;
     color: #fff;
     border-radius: 2em;
     box-shadow: 0 8px 16px;
@@ -632,7 +616,7 @@ input:invalid {
   }
 
   .main h1 {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(200, end);
