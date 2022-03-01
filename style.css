@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.reverse {
+  order: 1;
+}
+
 a {
   text-decoration: none;
   color: #091e42;
@@ -115,7 +119,6 @@ header {
 .main h1,
 h2 {
   overflow: hidden;
-  white-space: nowrap;
   font-size: 48px;
   line-height: 60px;
   align-items: center;
@@ -286,12 +289,12 @@ form button:active {
 }
 
 .inner_content {
+  width: 100%;
   display: flex;
-  flex-flow: wrap;
-  column-gap: 3%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 18px;
+  column-gap: 2%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 14px;
   line-height: 24px;
   color: #344563;
 }
@@ -302,6 +305,68 @@ form button:active {
 
 .inner_content h3 {
   margin-top: 0.7em;
+}
+
+.project_details_overlay_outer {
+  background-color: rgba(229, 229, 229, 0.8);
+  backdrop-filter: blur(3px);
+  padding: 10%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.project_details_overlay {
+  padding: 4em;
+  background: white;
+  border-radius: 2em;
+}
+
+.overlay_image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.panel img {
+  width: 70%;
+  padding-top: 0%;
+}
+
+.overlay_header_button {
+  color: grey;
+  border: 0;
+  background: white;
+  font-size: 36px;
+}
+
+.overlay_content {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  column-gap: 3%;
+  margin: 1%;
+  padding-top: 3%;
+  text-align: justify;
+}
+
+.overlay_button {
+  background-color: white;
+  padding: 0.4em 0.2em;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 1em;
+  color: #6979ff;
+  border: 1px solid #6979ff;
+  width: 45%;
+}
+
+.overlay_button span {
+  justify-content: center;
+  font-size: 0.9em;
 }
 
 .about_me {
@@ -345,12 +410,6 @@ form button:active {
   column-gap: 1em;
   list-style: none;
   padding-left: 0;
-}
-
-span {
-  width: 100%;
-  text-align: right;
-  margin-right: 3.5em;
 }
 
 .contact {
@@ -498,6 +557,10 @@ input:invalid {
 }
 
 @media only screen and (max-width: 768px) {
+  .reverse {
+    order: 0;
+  }
+
   .home {
     background-image: url(./img/header-shapes-mobile.svg);
     background-repeat: no-repeat;
@@ -555,6 +618,51 @@ input:invalid {
     background-color: rgba(96, 112, 255, 0);
     color: white;
     font-size: 42px;
+  }
+
+  .overlay_content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .div_overlay {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 1em;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  span {
+    width: 100%;
+    text-align: left;
+    margin-right: 0.2em;
+  }
+
+  .overlay_button span {
+    text-align: center;
+    padding: 1% 0;
+    font-size: 0.8em;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  .overlay_button span img {
+    width: 30px;
+    margin-left: 1em;
+  }
+
+  .overlay_button {
+    font-size: 22px;
+    padding: 0.6em 0;
+    width: 100%;
+  }
+
+  .ul_2 {
+    display: none;
   }
 
   .portfolio_work {
@@ -617,9 +725,8 @@ input:invalid {
   }
 
   .main h1 {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
-    white-space: nowrap;
     animation: typing 3s steps(200, end);
   }
 
@@ -671,17 +778,6 @@ input:invalid {
     width: 100%;
     color: #253858;
     background: #f7f7f9;
-  }
-
-  .panel img {
-    width: 70%;
-    padding-top: 0%;
-  }
-
-  span {
-    width: 100%;
-    text-align: right;
-    margin-right: 2em;
   }
 
   .contact {
