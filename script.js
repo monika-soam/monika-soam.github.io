@@ -187,3 +187,59 @@ window.onload = function onload() {
   document.getElementById('projects-container').innerHTML = finalHTML;
   document.getElementById('overlays-container').innerHTML = overlayHTML;
 };
+
+const form = document.getElementById('contactForm');
+const name_required = "Please enter your full name.";
+const email_required = "please enter your email address.";
+const email_invalid = "Please enter a correct email address format.";
+const email_invalid_lowercase = "Please enter a lowercase email address";
+
+function showMessage(input, message, type) {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+
+  input.className = type ? 'valid' : 'invalid';
+  return type;
+
+}
+
+
+function showError(input, message) {
+
+  return showMessage(input, message, false);
+
+}
+
+function showSuccess(input) {
+
+  return showMessage(input, "", true);
+
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === "") {
+    return showError(input, message);
+  }
+  return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg, lowercaseInvalid) {
+
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
+
+  if (input.value !== input.value.toLowerCase()) {
+    showError(input, lowercaseInvalid);
+    return false;
+  }
+
+  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  const email = input.value.trim();
+
+  if (!emailRegex.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
