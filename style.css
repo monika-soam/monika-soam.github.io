@@ -446,10 +446,16 @@ form button:active {
 
 form {
   display: grid;
+  grid-template-columns: auto;
   justify-items: center;
   row-gap: 5%;
   width: 50%;
   margin-top: 3%;
+}
+
+.div_form {
+  width: 100%;
+  text-align: center;
 }
 
 form input {
@@ -472,12 +478,18 @@ form textarea {
   line-height: 20px;
 }
 
-input:valid {
-  border-color: green;
+.valid {
+  border: 2px solid green;
 }
 
-input:invalid {
-  border-color: red;
+.invalid {
+  border: 2px solid red;
+}
+
+small {
+  text-align: left;
+  color: red;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -804,6 +816,11 @@ input:invalid {
     width: 100%;
     padding-left: 10%;
     margin-bottom: 10%;
+  }
+
+  .div_form {
+    width: 100%;
+    text-align: left;
   }
 
   .button {
