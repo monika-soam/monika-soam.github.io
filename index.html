@@ -55,7 +55,7 @@
       <div class="main">
         <h1>I’m Monika<br /> Glad to see you!</h1>
         <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-        <h2></h2>
+        <h2>&nbsp;</h2>
         <h3>LET’S CONNECT</h3>
         <ul class="social_img">
 
@@ -148,19 +148,20 @@
 
       <form action="https://formspree.io/f/xnqwdjbw" method="post" id="contactForm">
         <div class="div_form">
-          <input type="text" name="userName" maxlength="30" placeholder="Full Name">
-          <small></small>
+          <input type="text" name="userName" minlength='5' maxlength="30" placeholder="Full Name"><br>
+
         </div>
         <div class="div_form">
-          <input type="email" name="email" placeholder="monikasoam17@gmail.com">
+          <input type="email" name="email" minlength="7" placeholder="monikasoam17@gmail.com"><br>
           <small></small>
         </div>
-        <textarea name="message" cols="30" rows="10" placeholder="Write your meassage here" maxlength="500"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Write your meassage here" minlength='10' maxlength="500"></textarea>
         <button type="submit">Get It Touch</button>
       </form>
     </section>
   </div>
   <script src="script.js"></script>
+  <script src="data/main.js"></script>
 </body>
 
 </html>
