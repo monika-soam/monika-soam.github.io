@@ -197,18 +197,6 @@ window.onload = function onload() {
   document.getElementById("overlays-container").innerHTML = overlayHTML;
 };
 
-form.addEventListener("submit", function (event) {
-  console.log("Form Submitted");
-  event.preventDefault();
-
-  // let nameValid = hasValue(form.elements['userName'], name_required);
-  let emailValid = validateEmail(
-    form.elements["email"],
-    email_required,
-    email_invalid,
-    email_invalid_lowercase
-  );
-});
 const form = document.getElementById("contactForm");
 const name_required = "Please enter your full name.";
 const email_required = "please enter your email address.";
@@ -258,3 +246,14 @@ function validateEmail(input, requiredMsg, invalidMsg, lowercaseInvalid) {
   }
   return true;
 }
+form.addEventListener("submit", function (event) {
+  console.log("Form Submitted");
+  event.preventDefault();
+
+  let emailValid = validateEmail(
+    form.elements["email"],
+    email_required,
+    email_invalid,
+    email_invalid_lowercase
+  );
+});
