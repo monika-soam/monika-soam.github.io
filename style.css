@@ -133,7 +133,6 @@ h2 {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
@@ -446,10 +445,16 @@ form button:active {
 
 form {
   display: grid;
+  grid-template-columns: auto;
   justify-items: center;
   row-gap: 5%;
   width: 50%;
   margin-top: 3%;
+}
+
+.div_form {
+  width: 100%;
+  text-align: center;
 }
 
 form input {
@@ -472,12 +477,12 @@ form textarea {
   line-height: 20px;
 }
 
-input:valid {
-  border-color: green;
+.valid {
+  border-color: 2px solid green;
 }
 
-input:invalid {
-  border-color: red;
+.invalid {
+  border-color: 2px solid red;
 }
 
 @media only screen and (min-width: 992px) {
@@ -487,11 +492,9 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
-
   .menu_bar {
     display: none;
   }
-
   .button {
     width: 35%;
     padding: 2%;
@@ -499,7 +502,6 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
-
   .button:hover {
     background-color: #6979ff;
     border-radius: 2em;
@@ -513,42 +515,35 @@ input:invalid {
     padding: 1%;
     column-gap: 1%;
   }
-
   .menu_bar {
     display: none;
   }
-
   .work img {
     border-radius: 1em;
     object-fit: cover;
   }
-
   form button {
     width: 48%;
     transition: background-color 500ms ease-in;
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
-
   .main button {
     width: 66%;
     transition: background-color 500ms ease-in;
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
-
   form button:hover {
     background: #0017eb;
     color: #fff;
     border-radius: 2em;
     box-shadow: 0 8px 16px;
   }
-
   form button:active {
     color: #fff;
     background: #2230d2;
   }
-
   .main button:hover {
     background: #6070ff;
     color: #fff;
@@ -560,27 +555,22 @@ input:invalid {
   .reverse {
     order: 0;
   }
-
   .home {
     background-image: url(./img/header-shapes-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .nav_bar .link {
     display: none;
   }
-
   .nav_bar img {
     display: block;
     margin-left: 60%;
     width: 30%;
   }
-
   .my_logo {
     font-size: 22px;
   }
-
   .menu_bar {
     height: 100%;
     width: 100%;
@@ -589,43 +579,36 @@ input:invalid {
     overflow-x: hidden;
     transition: 0.5s;
   }
-
   .menu_bar_content {
     text-align: left;
     margin-top: 7%;
   }
-
   .anchor {
     list-style: none;
     font-size: 32px;
     font-weight: 600;
     padding: 5%;
   }
-
   .anchor a {
     color: white;
   }
-
   .menu_bar_header {
     text-align: right;
     margin-top: 5%;
     margin-right: 10%;
     font-size: 30px;
   }
-
   #btn-header {
     border: 0;
     background-color: rgba(96, 112, 255, 0);
     color: white;
     font-size: 42px;
   }
-
   .overlay_content {
     display: flex;
     flex-direction: column;
     text-align: justify;
   }
-
   .div_overlay {
     display: flex;
     flex-direction: row;
@@ -635,13 +618,11 @@ input:invalid {
     justify-content: center;
     text-align: left;
   }
-
   span {
     width: 100%;
     text-align: left;
     margin-right: 0.2em;
   }
-
   .overlay_button span {
     text-align: center;
     padding: 1% 0;
@@ -649,22 +630,18 @@ input:invalid {
     white-space: nowrap;
     justify-content: center;
   }
-
   .overlay_button span img {
     width: 30px;
     margin-left: 1em;
   }
-
   .overlay_button {
     font-size: 22px;
     padding: 0.6em 0;
     width: 100%;
   }
-
   .ul_2 {
     display: none;
   }
-
   .portfolio_work {
     display: flex;
     flex-direction: column;
@@ -672,7 +649,6 @@ input:invalid {
     padding: 3%;
     border-radius: 2em;
   }
-
   .portfolio_work1 {
     display: flex;
     flex-direction: column-reverse;
@@ -680,18 +656,15 @@ input:invalid {
     padding: 3%;
     border-radius: 2em;
   }
-
   .about_me {
     display: flex;
     flex-direction: column;
   }
-
   .main {
     margin: auto;
     padding: 10%;
     width: 100%;
   }
-
   form button {
     margin-left: 0;
     width: 45%;
@@ -703,52 +676,43 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
-
   .main button {
     width: 50%;
     transition: background-color 500ms ease-in;
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
-
   form button:hover {
     background: #6070ff;
     color: #fff;
     border-radius: 2em;
     box-shadow: 0 8px 16px;
   }
-
   .main button:hover {
     background: #6070ff;
     color: #fff;
     border-radius: 2em;
   }
-
   .main h1 {
     width: 100%;
     overflow: hidden;
     animation: typing 3s steps(200, end);
   }
-
   @keyframes typing {
     from {
       width: 0;
     }
-
     to {
       width: 100%;
     }
   }
-
   .main .about_h4 {
     width: 100%;
   }
-
   .accodian {
     margin-top: 0;
     padding-top: 0;
   }
-
   .link1,
   .link2,
   .link3 {
@@ -759,7 +723,6 @@ input:invalid {
     font-weight: bold;
     color: black;
   }
-
   .panel {
     display: grid;
     font-size: 18px;
@@ -767,7 +730,6 @@ input:invalid {
     row-gap: 0.8em;
     width: 90%;
   }
-
   .panel li {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -779,7 +741,6 @@ input:invalid {
     color: #253858;
     background: #f7f7f9;
   }
-
   .contact {
     padding: 3%;
     margin: auto;
@@ -788,14 +749,12 @@ input:invalid {
     background-repeat: no-repeat;
     background-color: #6070ff;
   }
-
   .content_footer p {
     padding-left: 8%;
     padding-right: 8%;
     font-size: 24px;
     margin: 0;
   }
-
   form {
     justify-items: left;
     display: grid;
@@ -805,7 +764,10 @@ input:invalid {
     padding-left: 10%;
     margin-bottom: 10%;
   }
-
+  .div_form {
+    width: 100%;
+    text-align: left;
+  }
   .button {
     padding: 2%;
     width: 40%;
@@ -813,13 +775,11 @@ input:invalid {
     transition: border-radius 500ms ease-in;
     transition: color 500ms ease-out;
   }
-
   .button:hover {
     background-color: #6979ff;
     border-radius: 2em;
     color: #fff;
   }
-
   textarea {
     border-radius: 8px;
     font-size: 16px;
