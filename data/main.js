@@ -1,67 +1,76 @@
-const projects = [{
-    featuredImage: 'img/Evocode.svg',
-    name: 'Monika',
-    title: 'Tonic',
+const projects = [
+  {
+    featuredImage: "img/Evocode.svg",
+    name: "Monika",
+    title: "Tonic",
     description: {
-      interface: 'Back End Dev',
+      interface: "Back End Dev",
       year: 2022,
     },
-    fullDesciption: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    detail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['Html', 'Css', 'Javascript'],
-    otherTechnologies: ['github', 'ruby', 'bootstrap'],
+    fullDesciption:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    detail:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["Html", "Css", "Javascript"],
+    otherTechnologies: ["github", "ruby", "bootstrap"],
 
-    liveDemo: '',
-    sourceCode: '',
+    liveDemo: "",
+    sourceCode: "",
   },
 
   {
-    featuredImage: 'img/GYMFit.svg',
-    name: 'Monika',
-    title: 'Tonic',
+    featuredImage: "img/GYMFit.svg",
+    name: "Monika",
+    title: "Tonic",
     description: {
-      interface: 'Back End Dev',
+      interface: "Back End Dev",
       year: 2022,
     },
-    fullDesciption: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    detail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['Html', 'Css', 'Javascript'],
-    otherTechnologies: ['github', 'ruby', 'bootstrap'],
+    fullDesciption:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    detail:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["Html", "Css", "Javascript"],
+    otherTechnologies: ["github", "ruby", "bootstrap"],
 
-    liveDemo: '',
-    sourceCode: '',
+    liveDemo: "",
+    sourceCode: "",
   },
   {
-    featuredImage: './img/Avalability.svg',
-    name: 'Monika',
-    title: 'Multi-Post Stories',
+    featuredImage: "./img/Avalability.svg",
+    name: "Monika",
+    title: "Multi-Post Stories",
     description: {
-      interface: 'Back End Dev',
+      interface: "Back End Dev",
       year: 2022,
     },
-    fullDesciption: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    detail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['Html', 'Css', 'Javascript'],
-    otherTechnologies: ['github', 'ruby', 'bootstrap'],
+    fullDesciption:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    detail:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["Html", "Css", "Javascript"],
+    otherTechnologies: ["github", "ruby", "bootstrap"],
 
-    liveDemo: '',
-    sourceCode: '',
+    liveDemo: "",
+    sourceCode: "",
   },
   {
-    featuredImage: 'img/ProfessionalArt.svg',
-    name: 'Monika',
-    title: 'Tonic',
+    featuredImage: "img/ProfessionalArt.svg",
+    name: "Monika",
+    title: "Tonic",
     description: {
-      interface: 'Back End Dev',
+      interface: "Back End Dev",
       year: 2022,
     },
-    fullDesciption: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    detail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['Html', 'Css', 'Javascript'],
-    otherTechnologies: ['github', 'ruby', 'bootstrap'],
+    fullDesciption:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    detail:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    technologies: ["Html", "Css", "Javascript"],
+    otherTechnologies: ["github", "ruby", "bootstrap"],
 
-    liveDemo: '',
-    sourceCode: '',
+    liveDemo: "",
+    sourceCode: "",
   },
 ];
 
@@ -93,7 +102,9 @@ const showProjectOverlay = (id) => {
 
   html += `</ul>
           <ul class="ul_2">`;
-  for (let i = 0; i < projects[id].otherTechnologies.length; i += 1) { html += `<li><a href="#">${projects[id].otherTechnologies[i]}</a></li>`; }
+  for (let i = 0; i < projects[id].otherTechnologies.length; i += 1) {
+    html += `<li><a href="#">${projects[id].otherTechnologies[i]}</a></li>`;
+  }
 
   html += `</ul>
         </div>
@@ -112,9 +123,9 @@ const showProjectOverlay = (id) => {
 };
 
 const showProject = (id) => {
-  let className = 'work ';
+  let className = "work ";
   if (id % 2 !== 0) {
-    className += 'reverse';
+    className += "reverse";
   }
   let html = `<div class="portfolio_work">
     <div class="${className}">
@@ -130,7 +141,9 @@ const showProject = (id) => {
       <p>${projects[id].detail}</p>
       <div class="inner_content_button">
         <ul>`;
-  for (let i = 0; i < projects[id].technologies.length; i += 1) { html += `<li><a href="#">${projects[id].technologies[i]}</a></li>`; }
+  for (let i = 0; i < projects[id].technologies.length; i += 1) {
+    html += `<li><a href="#">${projects[id].technologies[i]}</a></li>`;
+  }
   html += `</ul>
       </div>
       <button type="button" class="button" onclick="showOverlay('o${id}')">See Project</button>
@@ -141,30 +154,33 @@ const showProject = (id) => {
 
 const showOverlay = (overlayID) => {
   try {
-    document.getElementsByClassName(overlayID)[0].style.display = 'block';
+    document.getElementsByClassName(overlayID)[0].style.display = "block";
   } catch (e) {
     overlayID = undefined;
   }
 };
 const closeOverlay = (overlayID) => {
   try {
-    document.getElementsByClassName(overlayID)[0].style.display = 'none';
+    document.getElementsByClassName(overlayID)[0].style.display = "none";
   } catch (e) {
     overlayID = undefined;
   }
 };
 
 window.onload = function onload() {
-  let finalHTML = '';
-  let overlayHTML = '';
-  showOverlay('oo');
-  closeOverlay('oo');
+  let finalHTML = "";
+  let overlayHTML = "";
+  showOverlay("oo");
+  closeOverlay("oo");
   for (let i = 0; i < projects.length; i += 1) {
     finalHTML += showProject(i);
     overlayHTML += showProjectOverlay(i);
   }
-  document.getElementById('projects-container').innerHTML = finalHTML;
-  document.getElementById('overlays-container').innerHTML = overlayHTML;
+  document.getElementById("projects-container").innerHTML = finalHTML;
+  document.getElementById("overlays-container").innerHTML = overlayHTML;
 
-
+  const formData = JSON.parse(localStorage.getItem("formData"));
+  document.getElementsByName("userName")[0].value = formData.name;
+  document.getElementsByName("email")[0].value = formData.email;
+  document.getElementsByName("message")[0].value = formData.message;
 };
