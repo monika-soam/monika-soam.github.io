@@ -49,7 +49,6 @@ function hasValue(input, message) {
 }
 
 function ValidateEmailAddress(emailString) {
-  // check for @ sign
   const atSymbol = emailString.indexOf('@');
   const dot = emailString.indexOf('.');
 
@@ -57,7 +56,6 @@ function ValidateEmailAddress(emailString) {
 
   if (dot <= atSymbol + 2) return false;
   if (emailString.length - dot < 3) return false;
-  // check that the dot is not at the end
   if (dot === emailString.length - 1) return false;
 
   return true;
@@ -84,7 +82,8 @@ function validateEmail(input, requiredMsg, invalidMsg, lowercaseInvalid) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  validateEmail(
-    form.elements.email, emailRequired, emailInvalid, emailInvalidLowerCase,
-  );
+  if (validateEmail(
+      form.elements.email, emailRequired, emailInvalid, emailInvalidLowerCase,
+    ))
+    updateLocalStorage();
 });
