@@ -148,14 +148,14 @@
 
       <form action="https://formspree.io/f/xnqwdjbw" method="post" id="contactForm">
         <div class="div_form">
-          <input type="text" name="userName" minlength='5' maxlength="30" placeholder="Full Name"><br>
+          <input type="text" name="userName" minlength='5' maxlength="30" onchange="updateLocalStorage()" placeholder="Full Name"><br>
 
         </div>
         <div class="div_form">
-          <input type="email" name="email" minlength="7" placeholder="monikasoam17@gmail.com"><br>
+          <input type="email" name="email" minlength="7" onchange="updateLocalStorage()" placeholder="monikasoam17@gmail.com"><br>
           <small></small>
         </div>
-        <textarea name="message" cols="30" rows="10" placeholder="Write your meassage here" minlength='10' maxlength="500"></textarea>
+        <textarea name="message" cols="30" rows="10" onchange="updateLocalStorage()" placeholder="Write your meassage here" minlength='10' maxlength="500"></textarea>
         <button type="submit">Get In Touch</button>
       </form>
     </section>
