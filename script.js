@@ -87,3 +87,17 @@ form.addEventListener('submit', (event) => {
     ))
     updateLocalStorage();
 });
+
+const updateLocalStorage = () => {
+  const name = document.getElementsByName('userName')[0].value;
+  const email = document.getElementsByName('email')[0].value;
+  const message = document.getElementsByName('message')[0].value;
+  const formData = {
+    name: name,
+    email: email,
+    message: message,
+  }
+  console.log(formData);
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
