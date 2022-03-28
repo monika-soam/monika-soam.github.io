@@ -18,9 +18,9 @@ Added Home section,Work cards, About me section and Contact us
 
 👤 **Monika**
 
-- GitHub: https://github.com/monika-soam
+- [GitHub](https://github.com/monika-soam)
 - Twitter: @monikasoam
-- LinkedIn: linkedin.com/in/monika-soam-✓-16b59925
+- [LinkedIn](linkedin.com/in/monika-soam-✓-16b59925)
 
 
 
